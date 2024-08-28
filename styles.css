@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --stone100: hsl(30, 54%, 90%);
+  --stone150: hsl(30, 18%, 87%);
+  --stone600: hsl(30, 10%, 34%);
+  --stone900: hsl(24, 5%, 18%);
+  --brown800: hsl(14, 45%, 36%);
+  --rose800: hsl(332, 51%, 32%);
+  --rose50: hsl(330, 100%, 98%);
+  --bodyColor: hsl(0, 0%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --theadbg: hsl(27, 48%, 91%);
+}
+
+.attribution {
+  font-size: 0.61em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--stone100);
+  color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.11em;
+  font-size: 1.11em;
+}
+.container {
+  width: 50%;
+  background-color: var(--white);
+  padding: 2.22em;
+  border-radius: 0.56em;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.56em;
+}
+h1 {
+  font-size: 2.5em;
+  color: var(--black);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+section:nth-of-type(3),
+section:nth-of-type(4) {
+  margin-bottom: 1.11em;
+  border-bottom: 0.056em solid var(--stone150);
+}
+.prep-time {
+  background-color: var(--rose50);
+  padding: 0.56em 1.11em;
+  border-radius: 0.56em;
+}
+.prep-time h2 {
+  font-size: 1em;
+}
+
+ul,
+ol {
+  padding-left: 1.11em;
+}
+li {
+  padding-left: 20px;
+}
+
+.i {
+  color: var(--brown800);
+}
+.ingredients li::marker,
+.instructions li::marker {
+  color: var(--brown800);
+}
+
+h2 {
+  color: var(--brown800);
+  margin-bottom: 0.56em;
+  font-family: "Young Serif", serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.56em;
+  background-color: var(--white);
+  border-radius: 0.56em;
+  overflow: hidden;
+}
+
+thead {
+  background-color: var(--theadbg);
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.833em;
+  text-align: left;
+  width: 50%;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr {
+  border-bottom: 0.056em solid var(--stone150);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  color: var(--bodyColor);
+}
+td:nth-of-type(even) {
+  color: var(--brown800);
+  font-weight: bold;
+}
+
+p,
+li {
+  font-size: 0.89em;
+  margin-bottom: 0.56em;
+  line-height: 2;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 1em;
+  }
+  .container {
+    width: 70%;
+    padding: 2.22em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    font-size: 0.89em;
+  }
+  .container {
+    width: 100%;
+    background-color: var(--white);
+    padding: 0 0 20px;
+  }
+  h1 {
+    font-size: 2em;
+    color: var(--black);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+  }
+  header img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  section {
+    margin: 0 2.2em;
+  }
+}
